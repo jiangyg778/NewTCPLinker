@@ -56,6 +56,14 @@ namespace TCPLinker.ViewModels.Pages
             set { SetProperty(ref _Port, value); }
         }
 
+        //备注
+        private string _Remark = "";
+        public string Remark
+        {
+            get { return _Remark; }
+            set { SetProperty(ref _Remark, value); }
+        }
+
         // 当前链接状态
         private bool _ConnectState = false;
         public bool ConnectState

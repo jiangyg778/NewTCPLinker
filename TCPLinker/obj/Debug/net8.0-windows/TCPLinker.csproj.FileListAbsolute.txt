@@ -82,6 +82,7 @@ D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.GeneratedMSBuil
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.AssemblyInfoInputs.cache
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.AssemblyInfo.cs
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.csproj.CoreCompileInputs.cache
+D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.sourcelink.json
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.csproj.Up2Date
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.dll
 D:\111\NewTCPLinker\TCPLinker\obj\Debug\net8.0-windows\refint\TCPLinker.dll

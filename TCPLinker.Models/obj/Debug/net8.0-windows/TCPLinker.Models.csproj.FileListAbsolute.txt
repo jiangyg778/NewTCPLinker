@@ -16,6 +16,7 @@ D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.G
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.AssemblyInfoInputs.cache
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.AssemblyInfo.cs
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.csproj.CoreCompileInputs.cache
+D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.sourcelink.json
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.dll
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\refint\TCPLinker.Models.dll
 D:\111\NewTCPLinker\TCPLinker.Models\obj\Debug\net8.0-windows\TCPLinker.Models.pdb

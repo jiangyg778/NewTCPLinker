@@ -11,8 +11,8 @@
   <ItemGroup>
     <None Remove="Resourecs\Fonts\iconfont.ttf" />
     <None Remove="Resourecs\Images\home_icon.png" />
-    <None Remove="Resourecs\Images\暂停.png" />
-    <None Remove="Resourecs\Images\运行.png" />
+    <None Remove="Resourecs\Images\Start.png" />
+    <None Remove="Resourecs\Images\Stop.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,8 +27,10 @@
   <ItemGroup>
     <Resource Include="Resourecs\Fonts\iconfont.ttf" />
     <Resource Include="Resourecs\Images\home_icon.png" />
-    <Resource Include="Resourecs\Images\暂停.png" />
-    <Resource Include="Resourecs\Images\运行.png" />
+    <Resource Include="Resourecs\Images\Start.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resourecs\Images\Stop.png" />
   </ItemGroup>
 
 </Project>
