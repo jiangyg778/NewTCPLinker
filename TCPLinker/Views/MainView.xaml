@@ -1,0 +1,79 @@
+﻿<Window
+    x:Class="TCPLinker.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c="clr-namespace:TCPLinker.Base.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:TCPLinker.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    Title="MainView"
+    Width="900"
+    Height="550"
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <c:ImagePathConverter x:Key="ImagePathConverter" />
+        <c:HtmlEntityToUnicodeConverter x:Key="HtmlEntityToUnicodeConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#79BBFF" />
+        <ListBox
+            Grid.Row="0"
+            Margin="60,0,0,0"
+            HorizontalAlignment="Left"
+            HorizontalContentAlignment="Left"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            BorderThickness="0"
+            ItemsSource="{Binding MenuItems}"
+            SelectedItem="{Binding SelectedMenuItem}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Button
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Command="{Binding DataContext.SelectMenuCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                        CommandParameter="{Binding}">
+                        <!--  自定义 Button 的 ControlTemplate  -->
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border
+                                    Height="30"
+                                    Padding="5"
+                                    Background="white"
+                                    CornerRadius="5">
+                                    <StackPanel
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Orientation="Horizontal">
+
+                                        <TextBlock
+                                            Margin="0,0,5,0"
+                                            FontFamily="{StaticResource Icons}"
+                                            FontSize="18"
+                                            Text="{Binding IconName, Converter={StaticResource HtmlEntityToUnicodeConverter}}" />
+                                        <TextBlock FontSize="14" Text="{Binding Name}" />
+                                    </StackPanel>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="MainRegion" />
+
+    </Grid>
+</Window>
