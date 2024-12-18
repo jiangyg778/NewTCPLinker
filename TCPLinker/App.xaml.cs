@@ -1,6 +1,10 @@
-﻿using System.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 using System.Data;
 using System.Windows;
+using TCPLinker.IService;
+using TCPLinker.ORM;
+using TCPLinker.Service;
 using TCPLinker.Views;
 
 namespace TCPLinker
@@ -20,7 +24,7 @@ namespace TCPLinker
         {
             // 初始化窗体
             base.InitializeShell(shell);
-            // MainRegion自动加载DashboardView
+
             Container.Resolve<IRegionManager>().RegisterViewWithRegion("MainRegion", "HomeSetting");
         }
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -28,6 +32,10 @@ namespace TCPLinker
             // 注册View
             containerRegistry.RegisterForNavigation<Views.Pages.HomeSetting>();
             containerRegistry.RegisterForNavigation<Views.Pages.HelpCenter>();
+            //注册数据库上下文
+            containerRegistry.RegisterSingleton<DbContext, TCPLinkerDbContext>();
+            // 注册接口
+            containerRegistry.Register<IIPService, IPService>();
         }
     }
 }

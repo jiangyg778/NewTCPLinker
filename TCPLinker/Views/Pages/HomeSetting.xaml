@@ -152,6 +152,7 @@
                         Margin="0,0,30,0"
                         Background="#409EFF"
                         BorderThickness="0"
+                        Command="{Binding SaveCommand}"
                         Content="保存"
                         Foreground="#FFFFFF" />
                 </Grid>
@@ -164,6 +165,10 @@
                     CanUserAddRows="False"
                     GridLinesVisibility="All"
                     HeadersVisibility="Column"
+                    IsReadOnly="True"
+                    ItemsSource="{Binding IPLists}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
                     SelectionMode="Single"
                     SelectionUnit="FullRow">
                     <!--  定义列  -->
@@ -185,8 +190,8 @@
                             Binding="{Binding Port}"
                             Header="端口" />
                         <DataGridTextColumn
-                            Width="*"
-                            Binding="{Binding Remark}"
+                            Width="100"
+                            Binding="{Binding Remarks}"
                             Header="备注" />
                     </DataGrid.Columns>
                 </DataGrid>

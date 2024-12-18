@@ -1,0 +1,40 @@
+-- 1. 判断数据库是否存在，如果不存在则创建数据库 TCPLinkerDb
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'TCPLinkerDb')
+BEGIN
+    CREATE DATABASE TCPLinkerDb;
+    PRINT '数据库 TCPLinkerDb 创建成功。';
+END
+ELSE
+BEGIN
+    PRINT '数据库 TCPLinkerDb 已存在。';
+END
+GO
+
+-- 2. 使用 TCPLinkerDb 数据库
+USE TCPLinkerDb;
+GO
+
+-- 3. 判断表 dbo.ip_list 是否存在，如果不存在则创建表
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'ip_list' AND TABLE_SCHEMA = 'dbo')
+BEGIN
+    CREATE TABLE dbo.ip_list
+    (
+        ID INT IDENTITY(1,1) PRIMARY KEY,       -- 自增主键
+        ProgramName NVARCHAR(100) NOT NULL,     -- 程序名
+        IPAddress NVARCHAR(50) NOT NULL,        -- IP 地址
+        Port INT NOT NULL,                      -- 端口
+        Remarks NVARCHAR(255) NULL              -- 备注
+    );
+
+    PRINT '表 dbo.ip_list 创建成功。';
+END
+ELSE
+BEGIN
+    PRINT '表 dbo.ip_list 已存在。';
+END
+GO
+
+-- 4. 验证表结构是否正确 (可选)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'ip_list';
+GO

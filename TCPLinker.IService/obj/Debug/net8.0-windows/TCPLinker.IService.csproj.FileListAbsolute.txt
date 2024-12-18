@@ -1,0 +1,16 @@
+D:\111\NewTCPLinker\TCPLinker.IService\bin\Debug\net8.0-windows\TCPLinker.IService.deps.json
+D:\111\NewTCPLinker\TCPLinker.IService\bin\Debug\net8.0-windows\TCPLinker.IService.dll
+D:\111\NewTCPLinker\TCPLinker.IService\bin\Debug\net8.0-windows\TCPLinker.IService.pdb
+D:\111\NewTCPLinker\TCPLinker.IService\bin\Debug\net8.0-windows\TCPLinker.ORM.dll
+D:\111\NewTCPLinker\TCPLinker.IService\bin\Debug\net8.0-windows\TCPLinker.ORM.pdb
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.csproj.AssemblyReference.cache
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.GeneratedMSBuildEditorConfig.editorconfig
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.AssemblyInfoInputs.cache
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.AssemblyInfo.cs
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.csproj.CoreCompileInputs.cache
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.sourcelink.json
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinke.81C5C8DA.Up2Date
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.dll
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\refint\TCPLinker.IService.dll
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\TCPLinker.IService.pdb
+D:\111\NewTCPLinker\TCPLinker.IService\obj\Debug\net8.0-windows\ref\TCPLinker.IService.dll

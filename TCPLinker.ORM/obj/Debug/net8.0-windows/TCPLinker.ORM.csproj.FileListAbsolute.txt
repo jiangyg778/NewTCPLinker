@@ -1,0 +1,13 @@
+D:\111\NewTCPLinker\TCPLinker.ORM\bin\Debug\net8.0-windows\TCPLinker.ORM.deps.json
+D:\111\NewTCPLinker\TCPLinker.ORM\bin\Debug\net8.0-windows\TCPLinker.ORM.dll
+D:\111\NewTCPLinker\TCPLinker.ORM\bin\Debug\net8.0-windows\TCPLinker.ORM.pdb
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.csproj.AssemblyReference.cache
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.GeneratedMSBuildEditorConfig.editorconfig
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.AssemblyInfoInputs.cache
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.AssemblyInfo.cs
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.csproj.CoreCompileInputs.cache
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.sourcelink.json
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.dll
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\refint\TCPLinker.ORM.dll
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\TCPLinker.ORM.pdb
+D:\111\NewTCPLinker\TCPLinker.ORM\obj\Debug\net8.0-windows\ref\TCPLinker.ORM.dll

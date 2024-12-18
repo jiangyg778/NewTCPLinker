@@ -21,7 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TCPLinker.IService\TCPLinker.IService.csproj" />
     <ProjectReference Include="..\TCPLinker.Models\TCPLinker.Models.csproj" />
+    <ProjectReference Include="..\TCPLinker.ORM\TCPLinker.ORM.csproj" />
+    <ProjectReference Include="..\TCPLinker.Service\TCPLinker.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

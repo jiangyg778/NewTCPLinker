@@ -9,6 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPLinker.Models", "TCPLink
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{AD156F03-B965-4CC4-BB2C-28DE7B0263DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPLinker.ORM", "TCPLinker.ORM\TCPLinker.ORM.csproj", "{AAA018ED-E3B9-4BD4-A520-E9CCC7B75A7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7100EE72-7A22-4EA1-B73A-57D8043580DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPLinker.IService", "TCPLinker.IService\TCPLinker.IService.csproj", "{415E0CAE-281E-4892-8266-5BF2B76099CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPLinker.Service", "TCPLinker.Service\TCPLinker.Service.csproj", "{18D0FE2C-776C-4249-A658-2249A003CB6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,9 +33,25 @@ Global
 		{F74B804F-148B-42DE-89A1-9C49BF6E74B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD156F03-B965-4CC4-BB2C-28DE7B0263DB}.Debug|Any CPU.ActiveCfg = Debug
 		{AD156F03-B965-4CC4-BB2C-28DE7B0263DB}.Release|Any CPU.ActiveCfg = Release
+		{AAA018ED-E3B9-4BD4-A520-E9CCC7B75A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA018ED-E3B9-4BD4-A520-E9CCC7B75A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA018ED-E3B9-4BD4-A520-E9CCC7B75A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA018ED-E3B9-4BD4-A520-E9CCC7B75A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415E0CAE-281E-4892-8266-5BF2B76099CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415E0CAE-281E-4892-8266-5BF2B76099CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415E0CAE-281E-4892-8266-5BF2B76099CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415E0CAE-281E-4892-8266-5BF2B76099CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D0FE2C-776C-4249-A658-2249A003CB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D0FE2C-776C-4249-A658-2249A003CB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D0FE2C-776C-4249-A658-2249A003CB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D0FE2C-776C-4249-A658-2249A003CB6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{415E0CAE-281E-4892-8266-5BF2B76099CE} = {7100EE72-7A22-4EA1-B73A-57D8043580DD}
+		{18D0FE2C-776C-4249-A658-2249A003CB6B} = {7100EE72-7A22-4EA1-B73A-57D8043580DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6255B320-4802-4713-802E-A537BD3F29EA}

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -6,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using TCPLinker.Base.Utils;
+using TCPLinker.IService;
+using TCPLinker.ORM;
 using TouchSocket.Core;
 using TouchSocket.Sockets;
 
@@ -17,6 +20,8 @@ namespace TCPLinker.ViewModels.Pages
         private TcpClient _TcpClient = new TcpClient();
         private TcpService _TcpService = new TcpService();
         private UdpSession _UdpSession = new UdpSession();
+
+        IIPService _iPService;
 
         private ObservableCollection<string> _ProtocolTypes = new ObservableCollection<string> { "TCP Clicent", "TCP Server", "UDP" };
         public ObservableCollection<string> ProtocolTypes
@@ -64,6 +69,13 @@ namespace TCPLinker.ViewModels.Pages
             set { SetProperty(ref _Remark, value); }
         }
 
+        // iplist
+        private ObservableCollection<IPList> _IPLists = new ObservableCollection<IPList>();
+        public ObservableCollection<IPList> IPLists
+        {
+            get { return _IPLists; }
+            set { SetProperty(ref _IPLists, value); }
+        }
         // 当前链接状态
         private bool _ConnectState = false;
         public bool ConnectState
@@ -111,12 +123,54 @@ namespace TCPLinker.ViewModels.Pages
 
         public DelegateCommand BeginCommand { get; set; }
         public DelegateCommand SendMessageCommand { get; set; }
+        public DelegateCommand SaveCommand { get; set; }
 
-        public HomeSettingViewModel()
+        public HomeSettingViewModel(
+            IIPService IPService
+            )
         {
             GetIps();
             BeginCommand = new DelegateCommand(BeginAction);
             SendMessageCommand = new DelegateCommand(SendMessageAction);
+            SaveCommand = new DelegateCommand(SaveAction);
+            _iPService = IPService;
+            GetIPList();
+
+        }
+
+        private void SaveAction()
+        {
+           //prot转为int
+           int.TryParse(Port, out int port);
+         var resutl= _iPService.Save(new IPList { IPAddress = SelectedIPAddress,ProgramName="未知", Port = port, Remarks = Remark });
+            //如果有值返回则成功
+            if (resutl != null)
+            {
+                //提示
+                MessageBox.Show("保存成功");
+                GetIPList();
+
+            }
+            else { 
+                //提示
+                MessageBox.Show("保存失败");
+            }
+        }
+
+        //查询ip列表
+        private void GetIPList()
+        {
+            var list = _iPService.GetIPList();
+            //非List停止
+            if (list == null)
+                return;
+            IPLists.Clear();
+            //list倒序
+            list = list.OrderByDescending(x => x.ID).ToList();
+            foreach (var item in list)
+            {
+                IPLists.Add(item);
+            }
         }
 
         private void SendMessageAction()
