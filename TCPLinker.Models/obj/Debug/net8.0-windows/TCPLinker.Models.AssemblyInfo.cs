@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCPLinker.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0bcaad84fc23ca7ef341b0352fbdf13ac5600cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+432cd54130e1aa3cd98575c144b60fdd0fe76462")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCPLinker.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCPLinker.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

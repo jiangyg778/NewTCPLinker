@@ -32,6 +32,14 @@ namespace TCPLinker.ORM
                 }
                 catch (Exception ex)
                 {
+                    // 弹出错误提示框
+                    System.Windows.MessageBox.Show(
+                        "数据库连接失败：" + ex.Message,
+                        "错误",
+                        System.Windows.MessageBoxButton.OK,
+                        System.Windows.MessageBoxImage.Error
+                    );
+                    //错误框提示
                     System.Diagnostics.Debug.WriteLine("数据库连接失败：" + ex.Message);
                 }
 

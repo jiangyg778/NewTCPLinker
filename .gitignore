@@ -1,2 +1,35 @@
-﻿/.vs/TCPLinker
-/.vs/ProjectEvaluation
+﻿# 忽略 Visual Studio 生成的文件
+.vs/
+.vscode/
+*.user
+*.suo
+*.ide
+*.cache
+*.log
+*.tlog
+*.pdb
+*.obj
+*.bin
+*.dll
+*.exe
+
+# 忽略 NuGet 生成的包文件夹
+packages/
+*.nupkg
+
+# 忽略编译输出文件夹
+bin/
+obj/
+debug/
+release/
+
+# 保留关键项目文件
+!*.csproj
+!*.sln
+!packages.config
+!*.props
+!*.targets
+
+# 忽略操作系统特定的文件
+.DS_Store
+Thumbs.db
