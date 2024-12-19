@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCPLinker.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0bcaad84fc23ca7ef341b0352fbdf13ac5600cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea17ea2695e02292060549f60ba6dccb3e43785f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCPLinker.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCPLinker.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

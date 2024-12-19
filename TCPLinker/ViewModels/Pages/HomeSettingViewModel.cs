@@ -76,6 +76,24 @@ namespace TCPLinker.ViewModels.Pages
             get { return _IPLists; }
             set { SetProperty(ref _IPLists, value); }
         }
+
+        //选中的SelectedIPIterm
+        private IPList _SelectedIPIterm;
+        public IPList SelectedIPIterm
+        {
+            get { return _SelectedIPIterm; }
+            set
+            {
+                SetProperty(ref _SelectedIPIterm, value);
+                if (value != null)
+                {
+                    SelectedIPAddress = value.IPAddress;
+                    Port = value.Port.ToString();
+                    Remark = value.Remarks;
+                }
+            }
+        }
+
         // 当前链接状态
         private bool _ConnectState = false;
         public bool ConnectState
@@ -175,6 +193,11 @@ namespace TCPLinker.ViewModels.Pages
 
         private void SendMessageAction()
         {
+            if(!ConnectState)
+            {
+                MessageBox.Show("请先连接后再发送");
+                return;
+            }
             _TcpClient.Send(Encoding.UTF8.GetBytes(SendmessaggeData));
             MessageData+="发送:" + SendmessaggeData.FormatStringLog();
             //延迟1s

@@ -169,8 +169,10 @@
                     ItemsSource="{Binding IPLists}"
                     ScrollViewer.HorizontalScrollBarVisibility="Auto"
                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    SelectedItem="{Binding SelectedIPIterm, Mode=TwoWay}"
                     SelectionMode="Single"
                     SelectionUnit="FullRow">
+
                     <!--  定义列  -->
                     <DataGrid.Columns>
                         <DataGridTextColumn
